@@ -1,7 +1,7 @@
-public class SumAndReverse {
-    public static void main(String[] args) {
+class SumAndReverse{
+void main() {
         int number = 12345, sum = sumDigits(number), reversedSum = reverse(sum, 0);
-        System.out.println(reversedSum);
+    System.out.println(reversedSum);
     }
     
     static int sumDigits(int n) { return n == 0 ? 0 : n % 10 + sumDigits(n / 10); }
